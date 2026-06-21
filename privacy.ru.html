@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Политика конфиденциальности — DailyMate app.">
+  <title>Политика конфиденциальности · DailyMate</title>
+  <link rel="canonical" href="https://margaritasi.github.io/dailymate/privacy.ru.html">
+  <link rel="alternate" hreflang="en" href="https://margaritasi.github.io/dailymate/privacy.html">
+    <style>
+    :root {
+      --bg: #0F172A; --bg-soft: #15324A; --fg: #F1F5F9;
+      --fg-dim: rgba(241,245,249,0.72); --fg-faint: rgba(241,245,249,0.5);
+      --accent: #38BDF8; --line: rgba(241,245,249,0.12);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: linear-gradient(160deg, var(--bg) 0%, var(--bg-soft) 100%);
+      color: var(--fg);
+      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased; min-height: 100vh;
+    }
+    a { color: var(--fg); }
+    header { max-width: 720px; margin: 0 auto; padding: 24px 24px 8px; display: flex; align-items: center; justify-content: space-between; }
+    header .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -0.2px; text-decoration: none; }
+    header .brand .dot { width: 22px; height: 22px; border-radius: 7px; background: linear-gradient(135deg, var(--accent), #818CF8); }
+    header nav { display: flex; gap: 16px; font-size: 14px; }
+    header nav a { color: var(--fg-dim); text-decoration: none; }
+    header nav a:hover { color: var(--fg); }
+    main { max-width: 720px; margin: 12px auto 48px; padding: 0 24px; }
+    article { padding-top: 20px; }
+    article h1 { font-size: 38px; line-height: 1.05; letter-spacing: -0.8px; margin: 6px 0 0; }
+    article .last-updated { color: var(--fg-faint); font-size: 12.5px; letter-spacing: 0.4px; margin: 8px 0 0; }
+    article hr { border: 0; border-top: 1px solid var(--line); margin: 18px 0 24px; }
+    article section { margin: 0 0 26px; }
+    article section.lead p { color: var(--fg); font-size: 17px; }
+    article h2 { font-size: 18px; letter-spacing: -0.1px; margin: 0 0 6px; }
+    article p { color: var(--fg-dim); margin: 0 0 8px; }
+    article a { text-decoration: underline; text-decoration-color: rgba(56,189,248,0.5); }
+    article ul { color: var(--fg-dim); margin: 0 0 8px; padding-left: 22px; }
+    article li { margin: 4px 0; }
+    footer { max-width: 720px; margin: 0 auto; padding: 0 24px 40px; font-size: 12px; color: var(--fg-faint); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    footer a { color: var(--fg-dim); text-decoration: underline; text-decoration-color: rgba(255,255,255,0.2); }
+    @media (max-width: 480px) { article h1 { font-size: 32px; } header, main, footer { padding-left: 18px; padding-right: 18px; } }
+  </style>
+</head>
+<body>
+    <header>
+    <a class="brand" href="./"><span class="dot"></span><span>DailyMate</span></a>
+    <nav>
+      <a href="./">На главную</a>
+      <a href="./privacy.html">English</a>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>Политика конфиденциальности</h1>
+      <p class="last-updated">Обновлено: 13 мая 2026</p>
+      <hr>
+        <section class="lead">
+          <p>DailyMate — личный планировщик задач, целей и привычек. Приложение local-first: ваши личные данные и содержимое (задачи, заметки, чек-ины) хранятся только на устройстве и не передаются третьим лицам. Необязательные совместные функции (лига и совместный фокус), если вы их включаете, обмениваются с нашим сервером только анонимными обобщёнными данными — никогда вашей личностью или содержимым. Эта политика описывает, какие данные приложение обрабатывает и почему.</p>
+        </section>
+        <section>
+          <h2>1. Какие данные мы обрабатываем</h2>
+          <p>DailyMate работает с данными, которые вы сами вводите и которые читает с устройства с вашего разрешения:</p><ul><li>Задачи, цели, привычки, награды, заметки чек-инов и оценки совета — хранятся в локальной базе SQLite на вашем устройстве.</li></ul><ul><li>Показания Apple Watch / Apple Health: вариабельность сердечного ритма (HRV) и пульс в покое — читаются только с вашего разрешения через HealthKit и кэшируются локально.</li></ul><ul><li>Настройки приложения (язык, тон уведомлений, время утреннего / вечернего пинга, выбранный план подписки) — хранятся в стандартном UserDefaults / SharedPreferences.</li></ul>
+        </section>
+        <section>
+          <h2>2. Где данные находятся</h2>
+          <p>Ваши задачи, цели, привычки, заметки и чек-ины находятся <strong>только на вашем устройстве</strong>, и их содержимое не отправляется ни нам, ни третьим лицам. Резервные копии iCloud (если они включены у вас в iOS) могут включать локальные данные приложения — это контролирует iOS, не мы. Если вы включаете совместные функции (лига / совместный фокус), они работают через наш сервер (Cloudflare), но передают только анонимные обобщённые данные — подробнее в следующем разделе.</p>
+        </section>
+        <section>
+          <h2>3. Что мы НЕ собираем</h2>
+          <ul><li>Не используем рекламные SDK и трекеры (App Tracking Transparency: NSPrivacyTracking = false).</li><li>Не используем аналитику (никаких Google Analytics, Mixpanel, AppsFlyer и подобных).</li><li>Не запрашиваем доступ к контактам, фото, микрофону, камере, геолокации.</li><li>Не собираем имя, email или другие личные идентификаторы — в приложении нет регистрации и логина.</li><li>Совместные функции (лига / совместный фокус), когда включены, используют анонимный идентификатор устройства и случайный псевдоним. На сервер уходят только числа (сколько задач сделано, минут фокуса, серия), время фокус-блоков и часовой пояс — никаких названий задач, заметок или вашей личности. Эти данные можно стереть в Настройках («удалить аккаунт»).</li></ul>
+        </section>
+        <section>
+          <h2>4. Apple In-App Purchase</h2>
+          <p>Подписка DailyMate Premium оформляется через Apple In-App Purchase. Платёжные данные обрабатывает Apple, не мы. Мы получаем от Apple только статус подписки (активна / неактивна / тип плана) для разблокировки premium-функций — без имени, адреса, номера карты или Apple ID.</p>
+        </section>
+        <section>
+          <h2>5. Уведомления</h2>
+          <p>DailyMate использует только <strong>локальные уведомления</strong> iOS (Pomodoro-таймер, утренние и вечерние пинги). Push-серверов у нас нет, разрешение запрашивается с явным согласием в onboarding, отключается в любой момент в Настройках iOS.</p>
+        </section>
+        <section>
+          <h2>6. Делитесь сами</h2>
+          <p>Когда вы нажимаете «Поделиться неделей», iOS показывает системный share sheet. Вы сами выбираете, куда отправить текст — в Telegram, WhatsApp, X, заметки, Instagram Stories или другое приложение. Мы не отправляем за вас.</p>
+        </section>
+        <section>
+          <h2>7. Возраст</h2>
+          <p>DailyMate подходит пользователям от 13 лет. Мы сознательно не запрашиваем чувствительную информацию о здоровье или личности. HRV-показатели информационные, не медицинские.</p>
+        </section>
+        <section>
+          <h2>8. Удаление данных</h2>
+          <p>Чтобы удалить локальные данные — удалите приложение с устройства: iOS уничтожает sandbox приложения вместе с базой и кэшем. Если вы пользовались совместными функциями (лига / совместный фокус), в Настройках есть «удалить аккаунт» — она стирает ваши анонимные данные на нашем сервере.</p>
+        </section>
+        <section>
+          <h2>9. Изменения</h2>
+          <p>Если мы будем менять политику, мы обновим дату «Обновлено» сверху документа и опубликуем новую версию в новом обновлении приложения. Существенные изменения мы дополнительно подчеркнём при первом запуске после обновления.</p>
+        </section>
+        <section>
+          <h2>10. Контакты</h2>
+          <p>Вопросы, замечания, запросы на удаление — пишите на madgeSmy@protonmail.com.</p>
+        </section>
+    </article>
+  </main>
+    <footer>
+    <span>© 2026 IT Healthy Coder</span>
+    <span>
+      <a href="./privacy.ru.html">Конфиденциальность</a> ·
+      <a href="./terms.ru.html">Условия</a> ·
+      <a href="./support.html">Поддержка</a> ·
+      <a href="mailto:madgesmy@protonmail.com">Контакт</a>
+    </span>
+  </footer>
+</body>
+</html>
